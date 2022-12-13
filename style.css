@@ -44,8 +44,10 @@ li a:hover {
   background-color:green;
 }
 footer {
+  
   position: absolute;
-  bottom: 0;
+  top: auto;
+  bottom: -50px;
   background-color: #333;
   color: #FFF;
   width: 100%;
@@ -61,4 +63,68 @@ a{
 }
 p{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.myAnim{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  border: #333;
+  border-style: solid;
+  width: 810px;
+  height: 440px;
+}
+.myAnim{
+animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+img.face{
+  float: left;
+  border: transparent thin solid;
+  padding: 5px;
+  margin: 0px 10px 10px 0;
+  max-width: 800px;
 }
