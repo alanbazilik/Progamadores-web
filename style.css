@@ -25,7 +25,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: Helvetica;
+  
 }
 li {
   border-right: 1px solid #bbb;
@@ -55,4 +55,10 @@ footer {
 }
 .navbar{
   color: greenyellow;
+}
+a{
+  font-family: Helvetica;
+}
+p{
+  font-family: Helvetica;
 }
